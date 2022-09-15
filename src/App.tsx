@@ -1,5 +1,14 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Main from 'pages/Main/Main';
+
 function App() {
-  return <h1>Hello Github Issues :)</h1>;
+	return (
+		<Router>
+			<Routes>
+				<Route path="/" element={<Main />} />
+			</Routes>
+		</Router>
+	);
 }
 
 export default App;
